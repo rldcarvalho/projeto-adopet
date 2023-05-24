@@ -2,10 +2,9 @@
 
   &__logo-box {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
   }
 
-  //logo adopet
   &__logo {
     display: flex;
     width: 128px;
@@ -27,6 +26,35 @@
 
 }
 
+@media screen and (min-width: 0) {
+  
+  .header {
 
+    &__logo {
+      display: none;
+    }
 
+  }
+}
+
+@media (min-width: 768px) {
+
+  .header {
+
+    &__logo {
+      display: block;
+    }
+
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .header {
+
+    &__menu {
+      padding: 64px 161.17px 37px;
+    }
+  }
+}
 
