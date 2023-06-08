@@ -78,3 +78,23 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .home {
+    &__img-logo {
+      height: 65px;
+    }
+
+    &__subtitle {
+      width: 488px;
+    }
+
+    .btn {
+      width: 362px;
+    }
+
+    &__img-bottom {
+      width: 346px;
+    }
+  }
+}
