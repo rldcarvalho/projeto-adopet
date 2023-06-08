@@ -1,4 +1,6 @@
 .header {
+  background-color: #3772ff;
+
   &__logo-box {
     display: flex;
     align-items: flex-end;
@@ -23,8 +25,7 @@
 @media (min-width: 768px) {
   .header {
     &__logo {
-      display: flex;
-      // display: block;
+      display: block;
       width: 128px;
       height: 30px;
       margin-right: 50px;

@@ -1,9 +1,12 @@
 .footer {
-
-    &__text{
-        text-align: center;
-        color: #ffffff;
-        padding: 20px;
-        background-color: #36D6AD;
-    }
+  position: relative;
+  background-color: #36d6ad;
+  z-index: 1;
+  &__text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 40px;
+  }
 }
