@@ -1,11 +1,13 @@
+@import "../../../assets/abstract/variables";
+
 .footer {
   position: relative;
-  background-color: #36d6ad;
+  background-color: $verde-principal;
   background-size: auto 104px;
   z-index: 1;
   &__text {
     text-align: center;
-    color: #ffffff;
+    color: $branco-principal;
     font-size: 15px;
     line-height: 24px;
     padding: 40px;

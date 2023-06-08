@@ -1,5 +1,7 @@
+@import "../../../assets/abstract/variables";
+
 .header {
-  background-color: #3772ff;
+  background-color: $azul-principal;
 
   &__logo-box {
     display: flex;
