@@ -1,4 +1,6 @@
 .home {
+  background: url(../../../assets/img/vetor2.svg) no-repeat right -14px top 50px;
+  background-size: 84px;
   background-color: #3772ff;
   text-align: center;
   color: #ffffff;
@@ -51,6 +53,9 @@
 
 @media (min-width: 768px) {
   .home {
+    background-size: auto;
+    background-position: right 0;
+
     &__img-logo {
       height: 60px;
     }
