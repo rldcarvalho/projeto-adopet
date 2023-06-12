@@ -51,7 +51,43 @@
 
   &__btn {
     width: 150px;
-    padding: 12px;
+    padding: 10px;
     margin: 0 auto 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .signin {
+    background-size: auto;
+    background-position: right 0;
+
+    &__img-logo {
+      height: 62px;
+      padding-bottom: 40px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__label {
+      font-size: 18px;
+      padding-bottom: 8px;
+    }
+
+    &__input {
+      width: 344px;
+    }
+
+    &__recuperar-senha {
+      font-size: 14px;
+    }
+
+    .btn {
+      width: 164px;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
