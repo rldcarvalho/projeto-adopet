@@ -1,0 +1,57 @@
+@import "../../../../assets/abstract/variables";
+@import "../../../../assets/abstract/base";
+
+.signin {
+  background-color: $branco-principal;
+  text-align: center;
+
+  &__img-logo {
+    height: 35px;
+    padding: 20px 0 55px;
+  }
+
+  &__subtitle {
+    width: 312px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $azul-principal;
+    margin: 0 auto;
+    padding-bottom: 42px;
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: 400;
+    color: $cinza-escuro;
+    padding-bottom: 4px;
+    display: block;
+  }
+
+  &__input {
+    width: 312px;
+    height: 40px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__recuperar-senha {
+    color: $vermelho-principal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__btn {
+    width: 150px;
+    padding: 12px;
+    margin: 0 auto 200px;
+  }
+}
