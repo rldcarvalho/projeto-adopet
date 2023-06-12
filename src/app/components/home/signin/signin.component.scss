@@ -58,9 +58,6 @@
 
 @media (min-width: 768px) {
   .signin {
-    background-size: auto;
-    background-position: right 0;
-
     &__img-logo {
       height: 62px;
       padding-bottom: 40px;
@@ -88,6 +85,27 @@
       width: 164px;
       font-size: 18px;
       line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .signin {
+    &__img-logo {
+      height: 64px;
+      padding-bottom: 64px;
+    }
+
+    &__subtitle {
+      padding-bottom: 72px;
+    }
+
+    &__input {
+      width: 552px;
+    }
+
+    .btn {
+      width: 144px;
     }
   }
 }
