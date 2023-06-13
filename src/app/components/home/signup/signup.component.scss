@@ -40,3 +40,34 @@
     margin: 0 auto 100px;
   }
 }
+
+@media (min-width: 768px) {
+  .signup {
+    &__img-logo {
+      height: 62px;
+      padding-bottom: 40px;
+    }
+
+    &__subtitle {
+      width: 525px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__label {
+      font-size: 18px;
+      padding-bottom: 8px;
+    }
+
+    &__input {
+      width: 344px;
+    }
+
+    .btn {
+      width: 164px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 185px;
+    }
+  }
+}
