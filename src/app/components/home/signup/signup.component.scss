@@ -1,0 +1,42 @@
+@import "../../../../assets/abstract/variables";
+@import "../../../../assets/abstract/base";
+
+.signup {
+  background-color: $branco-principal;
+  text-align: center;
+
+  &__img-logo {
+    height: 35px;
+    padding: 20px 0 24px;
+  }
+
+  &__subtitle {
+    width: 312px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $azul-principal;
+    margin: 0 auto;
+    padding-bottom: 42px;
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: 400;
+    color: $cinza-escuro;
+    padding-bottom: 4px;
+    display: block;
+  }
+
+  &__input {
+    width: 312px;
+    height: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    width: 150px;
+    padding: 10px;
+    margin: 0 auto 100px;
+  }
+}
