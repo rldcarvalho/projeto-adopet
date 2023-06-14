@@ -1,0 +1,65 @@
+@import "../../../assets/abstract/variables";
+
+.pets {
+  &__subtitle {
+    width: 226px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $azul-principal;
+    margin: 0 auto;
+    padding: 20px 0 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__card {
+    background-color: $cinza-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+    gap: 16px;
+
+    &__img {
+      width: 148px;
+      height: 148px;
+    }
+
+    &__content {
+      font-size: 14px;
+      line-height: 20px;
+      color: $cinza-escuro;
+
+      &-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: $azul-principal;
+        margin-bottom: 8px;
+      }
+
+      &-address {
+        font-style: normal;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 30px;
+      }
+      &-link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        text-decoration: none;
+        color: $cinza-escuro;
+        margin-top: 8px;
+      }
+    }
+  }
+}
