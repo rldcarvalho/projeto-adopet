@@ -1,0 +1,77 @@
+@import "../../../../assets/abstract/variables";
+@import "../../../../assets/abstract/base";
+
+.profile {
+  text-align: center;
+  &__subtitle {
+    width: 247px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $azul-principal;
+    margin: 12px auto 24px;
+  }
+
+  &__form {
+    background-color: $cinza-bg;
+    width: 312px;
+    padding: 32px 16px;
+    margin: 16px auto;
+    &__title {
+      font-size: 21px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    &__box-image {
+      &__text {
+        color: $vermelho-principal;
+        font-size: 12px;
+        font-weight: 400;
+        display: block;
+        margin-bottom: 5px;
+        text-decoration: none;
+      }
+    }
+
+    &__label {
+      font-size: 16px;
+      font-weight: 600;
+      color: $azul-principal;
+      margin-bottom: 8px;
+      display: block;
+      text-align: start;
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      text-align: start;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      background-color: $branco-principal;
+      &::placeholder {
+        text-align: start;
+        color: $cinza-escuro;
+      }
+    }
+
+    &__input {
+      height: 40px;
+    }
+
+    &__textarea {
+      line-height: 24px;
+      height: 176px;
+      margin-bottom: 32px;
+      &::placeholder {
+        line-height: 24px;
+      }
+    }
+
+    &__btn {
+      width: 150px;
+      padding: 10px;
+    }
+  }
+}

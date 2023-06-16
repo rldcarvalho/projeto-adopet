@@ -1,0 +1,56 @@
+<main class="profile">
+  <p class="profile__subtitle">
+    Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua
+    mensagem.
+  </p>
+  <form class="profile__form">
+    <h4 class="profile__form__title">Perfil</h4>
+    <label class="label profile__form__label">Foto</label>
+    <div class="profile__form__box-image">
+      <img
+        class="profile__form__box-image__img"
+        src="../../../../assets/img/perfil-imagem.png"
+        alt="Foto de perfil"
+      />
+      <p class="profile__form__box-image__text">Clique na foto para alterar</p>
+    </div>
+    <div>
+      <label for="nome" class="profile__form__label">Nome</label>
+      <input
+        class="input profile__form__input"
+        type="text"
+        placeholder="Joana Magalhães"
+        required
+      />
+    </div>
+    <div>
+      <label for="telefone" class="profile__form__label">Telefone</label>
+      <input
+        class="input profile__form__input"
+        type="text"
+        placeholder="55 11 xxxxxxxxx"
+        required
+      />
+    </div>
+    <div>
+      <label for="nome-animal" class="profile__form__label">Cidade</label>
+      <input
+        class="input profile__form__input"
+        type="text"
+        placeholder="São Paulo"
+        required
+      />
+    </div>
+    <div>
+      <label for="mensagem" class="profile__form__label">Sobre</label>
+      <textarea
+        class="input profile__form__textarea"
+        cols="30"
+        rows="10"
+        placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."
+        required
+      ></textarea>
+    </div>
+    <button class="btn profile__form__btn" type="submit">Salvar</button>
+  </form>
+</main>
