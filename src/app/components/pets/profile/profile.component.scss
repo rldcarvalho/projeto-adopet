@@ -75,3 +75,22 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .profile {
+    &__subtitle {
+      font-size: 18px;
+      line-height: 26px;
+      width: 524px;
+      margin: 40px auto;
+    }
+
+    &__form {
+      width: 524px;
+      margin-bottom: 90px;
+      &__btn {
+        width: 164px;
+      }
+    }
+  }
+}
