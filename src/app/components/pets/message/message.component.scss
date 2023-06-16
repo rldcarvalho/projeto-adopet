@@ -15,9 +15,10 @@
 
   &-form {
     background-color: $cinza-bg;
-    margin: 12px 24px;
+    margin: 12px auto;
     padding: 32px 16px;
     border-radius: 10px;
+    width: 285px;
   }
 
   &__label {
@@ -53,5 +54,25 @@
   &__btn {
     width: 150px;
     padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .message {
+    &__subtitle {
+      font-size: 18px;
+      line-height: 26px;
+      width: 524px;
+      margin: 40px auto;
+    }
+
+    &-form {
+      width: 524px;
+      margin-bottom: 90px;
+    }
+
+    &__btn {
+      width: 164px;
+    }
   }
 }
