@@ -22,3 +22,17 @@
   background-size: 352px;
   background-color: $branco-principal;
 }
+
+@media (min-width: 768px) {
+  .home {
+    background-size: 560px;
+  }
+
+  .sign {
+    background-size: 200px, 560px;
+  }
+
+  .pets {
+    background-size: 560px;
+  }
+}

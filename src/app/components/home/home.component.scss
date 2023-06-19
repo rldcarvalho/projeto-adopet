@@ -56,10 +56,11 @@
 @media (min-width: 768px) {
   .home {
     background-size: auto;
-    background-position: right 0;
+    background-position: right 0 top 90px;
 
     &__img-logo {
       height: 60px;
+      margin-top: 90px;
     }
 
     &__title {
