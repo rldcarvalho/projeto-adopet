@@ -94,3 +94,11 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .profile {
+    &__subtitle {
+      margin-top: 60px;
+    }
+  }
+}

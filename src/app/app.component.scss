@@ -36,3 +36,22 @@
     background-size: 560px;
   }
 }
+
+@media (min-width: 1440px) {
+  .home {
+    background-size: 560px;
+  }
+
+  .sign {
+    background: url(../assets/img/patas-desktop.svg),
+      url(../assets/img/vetor1.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-position: top right, top left;
+    background-size: 294px, 560px;
+  }
+
+  .pets {
+    background-size: 560px;
+  }
+}

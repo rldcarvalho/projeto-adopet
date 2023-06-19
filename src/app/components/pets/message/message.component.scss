@@ -76,3 +76,11 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .message {
+    &__subtitle {
+      margin-top: 60px;
+    }
+  }
+}
