@@ -1,0 +1,24 @@
+@import "../assets/abstract/variables";
+
+.home {
+  background: url(../assets/img/vetor1.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 352px;
+  background-color: $azul-principal;
+}
+
+.sign {
+  background: url(../assets/img/patas.svg), url(../assets/img/vetor1.svg);
+  background-repeat: no-repeat;
+  background-position: top right, top left;
+  background-color: $branco-principal;
+}
+
+.pets {
+  background: url(../assets/img/vetor1.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 352px;
+  background-color: $branco-principal;
+}
