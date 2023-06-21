@@ -60,6 +60,9 @@
 
 @media (min-width: 768px) {
   .signin {
+    background: url(../../../../assets/img/vetor2.svg) no-repeat right 0 top
+      130px;
+    background-size: 134px;
     &__img-logo {
       height: 62px;
       margin-top: 90px;
@@ -87,7 +90,7 @@
     .btn {
       width: 164px;
       font-size: 18px;
-      line-height: 24px;
+      margin-bottom: 400px;
     }
   }
 }

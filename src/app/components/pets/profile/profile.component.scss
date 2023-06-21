@@ -15,6 +15,7 @@
   &__form {
     background-color: $cinza-bg;
     width: 312px;
+    border-radius: 10px;
     padding: 32px 16px;
     margin: 16px auto;
     &__title {
@@ -78,6 +79,8 @@
 
 @media (min-width: 768px) {
   .profile {
+    background: url(../../../../assets/img/vetor2.svg) no-repeat right 0 top 0;
+    background-size: 134px;
     &__subtitle {
       font-size: 18px;
       line-height: 26px;

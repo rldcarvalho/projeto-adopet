@@ -59,6 +59,8 @@
 
 @media (min-width: 768px) {
   .message {
+    background: url(../../../../assets/img/vetor2.svg) no-repeat right 0 top 0;
+    background-size: 134px;
     &__subtitle {
       font-size: 18px;
       line-height: 26px;
