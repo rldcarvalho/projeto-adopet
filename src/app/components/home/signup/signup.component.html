@@ -30,21 +30,39 @@
     </div>
     <div>
       <label for="senha" class="signup__label">Senha</label>
-      <input
-        class="input signup__input"
-        type="password"
-        placeholder="Crie uma senha"
-        required
-      />
+      <div class="password-toggle">
+        <input
+          class="input signup__input"
+          type="password"
+          placeholder="Crie uma senha"
+          required
+        />
+        <span (click)="togglePasswordVisibility()">
+          <img
+            class="password-toggle__icon"
+            [src]="hidePassword ? eyeIcon : eyeClosedIcon"
+            alt="Ícone Olho"
+          />
+        </span>
+      </div>
     </div>
     <div>
       <label for="senha" class="signup__label">Confirme sua senha</label>
-      <input
-        class="input signup__input"
-        type="password"
-        placeholder="Repita a senha criada acima"
-        required
-      />
+      <div class="password-toggle">
+        <input
+          class="input signup__input"
+          type="password"
+          placeholder="Repita a senha criada acima"
+          required
+        />
+        <span (click)="togglePasswordVisibility()">
+          <img
+            class="password-toggle__icon"
+            [src]="hidePassword ? eyeIcon : eyeClosedIcon"
+            alt="Ícone Olho"
+          />
+        </span>
+      </div>
     </div>
   </form>
   <button class="btn signup__btn" type="submit">Cadastrar</button>

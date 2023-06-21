@@ -17,12 +17,22 @@
     </div>
     <div>
       <label for="senha" class="signin__label">Senha</label>
-      <input
-        class="input signin__input"
-        type="password"
-        placeholder="Insira sua senha"
-        required
-      />
+      <div class="password-toggle">
+        <input
+          class="input signin__input"
+          type="{{ hidePassword ? 'password' : 'text' }}"
+          [(ngModel)]="password"
+          placeholder="Insira sua senha"
+          required
+        />
+        <span (click)="togglePasswordVisibility()">
+          <img
+            class="password-toggle__icon"
+            [src]="hidePassword ? eyeIcon : eyeClosedIcon"
+            alt="Ícone Olho"
+          />
+        </span>
+      </div>
     </div>
   </form>
   <a routerLink="#" class="signin__recuperar-senha">Esqueci minha senha</a>

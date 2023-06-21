@@ -11,6 +11,7 @@ import { SignupComponent } from './components/home/signup/signup.component';
 import { PetsComponent } from './components/pets/pets.component';
 import { MessageComponent } from './components/pets/message/message.component';
 import { ProfileComponent } from './components/pets/profile/profile.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProfileComponent } from './components/pets/profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

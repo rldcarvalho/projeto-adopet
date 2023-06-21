@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent {
+  password: string = '';
+  hidePassword: boolean = true;
+  eyeIcon: string = "../../../assets/img/eye.svg";
+  eyeClosedIcon: string = '../../../assets/img/eye-closed.svg';
+
+  togglePasswordVisibility(): void {
+    this.hidePassword = !this.hidePassword;
+  }
 
 }

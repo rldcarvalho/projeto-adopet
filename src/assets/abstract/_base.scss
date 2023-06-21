@@ -34,3 +34,16 @@
     color: $cinza-claro;
   }
 }
+
+.password-toggle {
+  position: relative;
+  display: inline-block;
+
+  &__icon {
+    position: absolute;
+    top: 20px;
+    left: 94%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}
