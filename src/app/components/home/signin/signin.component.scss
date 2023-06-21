@@ -2,6 +2,9 @@
 @import "../../../../assets/abstract/base";
 
 .signin {
+  background: url(../../../../assets/img/vetor2-login.png) no-repeat left 0 top
+    240px;
+  background-size: 84px;
   text-align: center;
 
   &__img-logo {
@@ -51,7 +54,7 @@
   &__btn {
     width: 150px;
     padding: 10px;
-    margin: 0 auto 200px;
+    margin: 0 auto 250px;
   }
 }
 
