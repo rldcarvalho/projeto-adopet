@@ -12,6 +12,7 @@ import { PetsComponent } from './components/pets/pets.component';
 import { MessageComponent } from './components/pets/message/message.component';
 import { ProfileComponent } from './components/pets/profile/profile.component';
 import { FormsModule } from '@angular/forms';
+import { MsgWarningComponent } from './components/msg-warning/msg-warning.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     PetsComponent,
     MessageComponent,
-    ProfileComponent
+    ProfileComponent,
+    MsgWarningComponent
   ],
   imports: [
     BrowserModule,

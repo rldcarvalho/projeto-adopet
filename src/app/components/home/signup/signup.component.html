@@ -9,33 +9,67 @@
     Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
   </p>
 
-  <form class="signup-form">
+  <form class="signup-form" id="form" #f="ngForm" (ngSubmit)="register(f)">
     <div>
-      <label for="nome" class="signup__label">Nome</label>
+      <label for="name" class="signup__label">Nome</label>
       <input
+        name="name"
+        id="name"
         class="input signup__input"
         type="text"
         placeholder="Digite seu nome completo"
+        ngModel
         required
+        minlength="2"
+        #name="ngModel"
       />
+      <div *ngIf="(name?.invalid && name?.touched) || name?.dirty">
+        <app-msg-warning
+          *ngIf="name?.errors?.['required']"
+          message="O campo de nome deve ser preenchido"
+        ></app-msg-warning>
+        <app-msg-warning
+          *ngIf="name?.errors?.['minlength']"
+          message="O nome deve ter no mínimo 2 caracteres"
+        ></app-msg-warning>
+      </div>
     </div>
     <div>
       <label for="email" class="signup__label">Email</label>
       <input
+        name="email"
+        id="email"
         class="input signup__input"
         type="email"
         placeholder="Insira seu melhor email"
+        ngModel
         required
+        email
+        #email="ngModel"
       />
+      <div *ngIf="(email?.invalid && email?.touched) || email?.dirty">
+        <app-msg-warning
+          *ngIf="email?.errors?.['required']"
+          message="O campo de email é obrigatório"
+        ></app-msg-warning>
+        <app-msg-warning
+          *ngIf="email?.errors?.['email']"
+          message="E-mail inválido. Seguir o padrão: 'exemplo@dominio.com'"
+        ></app-msg-warning>
+      </div>
     </div>
     <div>
-      <label for="senha" class="signup__label">Senha</label>
+      <label for="password" class="signup__label">Senha</label>
       <div class="password-toggle">
         <input
+          name="password"
+          id="password"
           class="input signup__input"
           type="password"
           placeholder="Crie uma senha"
+          ngModel
           required
+          #password="ngModel"
         />
         <span (click)="togglePasswordVisibility()">
           <img
@@ -44,16 +78,28 @@
             alt="Ícone Olho"
           />
         </span>
+        <div
+          *ngIf="(password?.invalid && password?.touched) || password?.dirty"
+        >
+          <app-msg-warning
+            *ngIf="password?.errors?.['required']"
+            message="O campo de senha é obrigatório"
+          ></app-msg-warning>
+        </div>
       </div>
     </div>
     <div>
       <label for="senha" class="signup__label">Confirme sua senha</label>
       <div class="password-toggle">
         <input
+          name="confirmPassword"
+          id="confirmPassword"
           class="input signup__input"
           type="password"
           placeholder="Repita a senha criada acima"
+          ngModel
           required
+          #confirmPassword="ngModel"
         />
         <span (click)="togglePasswordVisibility()">
           <img
@@ -62,6 +108,17 @@
             alt="Ícone Olho"
           />
         </span>
+        <div
+          *ngIf="
+            (confirmPassword?.invalid && confirmPassword?.touched) ||
+            confirmPassword?.dirty
+          "
+        >
+          <app-msg-warning
+            *ngIf="confirmPassword?.errors?.['required']"
+            message="O campo de senha é obrigatório"
+          ></app-msg-warning>
+        </div>
       </div>
     </div>
   </form>

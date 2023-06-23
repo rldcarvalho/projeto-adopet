@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {  NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-signup',
@@ -14,5 +15,7 @@ export class SignupComponent {
   togglePasswordVisibility(): void {
     this.hidePassword = !this.hidePassword;
   }
+
+  register(form: NgForm): void{}
 
 }

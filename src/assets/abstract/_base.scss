@@ -47,3 +47,11 @@
     cursor: pointer;
   }
 }
+
+.error__text {
+  position: relative;
+  bottom: 24px;
+  font-size: 12px;
+  line-height: 18px;
+  color: $vermelho-principal;
+}
