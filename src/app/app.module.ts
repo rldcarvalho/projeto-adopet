@@ -11,8 +11,9 @@ import { SignupComponent } from './components/home/signup/signup.component';
 import { PetsComponent } from './components/pets/pets.component';
 import { MessageComponent } from './components/pets/message/message.component';
 import { ProfileComponent } from './components/pets/profile/profile.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MsgWarningComponent } from './components/msg-warning/msg-warning.component';
+import { PasswordMatchDirective } from './directives/password-match.directive';
 
 @NgModule({
   declarations: [
@@ -25,12 +26,14 @@ import { MsgWarningComponent } from './components/msg-warning/msg-warning.compon
     PetsComponent,
     MessageComponent,
     ProfileComponent,
-    MsgWarningComponent
+    MsgWarningComponent,
+    PasswordMatchDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
