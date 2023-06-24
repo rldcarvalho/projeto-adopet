@@ -75,7 +75,7 @@
           formControlName="password"
           id="password"
           class="input signup__input"
-          type="password"
+          type="{{ hidePassword ? 'password' : 'text' }}"
           placeholder="Crie uma senha"
         />
         <span (click)="togglePasswordVisibility()">
@@ -108,7 +108,7 @@
           formControlName="confirmPassword"
           id="confirmPassword"
           class="input signup__input"
-          type="password"
+          type="{{ hidePassword ? 'password' : 'text' }}"
           placeholder="Repita a senha criada acima"
         />
         <span (click)="togglePasswordVisibility()">
