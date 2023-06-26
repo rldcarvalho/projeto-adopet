@@ -5,25 +5,47 @@
     alt="Logo Adopet"
   />
   <p class="signin__subtitle">Já tem conta? Faça seu login:</p>
-  <form class="signin-form">
+  <form
+    class="signin-form"
+    #form="ngForm"
+    [formGroup]="signinForm"
+    (ngSubmit)="login()"
+  >
     <div>
       <label for="email" class="signin__label">Email</label>
       <input
+        formControlName="email"
+        id="email"
         class="input signin__input"
         type="email"
         placeholder="Insira seu email"
-        required
       />
+      <div
+        *ngIf="
+          (signinForm.get('email')?.invalid &&
+            signinForm.get('email')?.touched) ||
+          signinForm.get('email')?.dirty
+        "
+      >
+        <app-msg-warning
+          *ngIf="signinForm.get('email')?.errors?.['required']"
+          message="O campo de email é obrigatório"
+        ></app-msg-warning>
+        <app-msg-warning
+          *ngIf="signinForm.get('email')?.errors?.['email']"
+          message="E-mail inválido. Seguir o padrão: 'exemplo@dominio.com'"
+        ></app-msg-warning>
+      </div>
     </div>
     <div>
-      <label for="senha" class="signin__label">Senha</label>
+      <label for="password" class="signin__label">Senha</label>
       <div class="password-toggle">
         <input
+          formControlName="password"
+          id="password"
           class="input signin__input"
           type="{{ hidePassword ? 'password' : 'text' }}"
-          [(ngModel)]="password"
           placeholder="Insira sua senha"
-          required
         />
         <span (click)="togglePasswordVisibility()">
           <img
@@ -32,11 +54,23 @@
             alt="Ícone Olho"
           />
         </span>
+        <div
+          *ngIf="
+            (signinForm.get('password')?.invalid &&
+              signinForm.get('password')?.touched) ||
+            signinForm.get('password')?.dirty
+          "
+        >
+          <app-msg-warning
+            *ngIf="signinForm.get('password')?.errors?.['required']"
+            message="O campo de senha é obrigatório"
+          ></app-msg-warning>
+        </div>
       </div>
     </div>
+    <a routerLink="#" class="signin__recuperar-senha">Esqueci minha senha</a>
+    <button class="btn signin__btn" type="submit" routerLink="/pets">
+      Entrar
+    </button>
   </form>
-  <a routerLink="#" class="signin__recuperar-senha">Esqueci minha senha</a>
-  <button class="btn signin__btn" type="submit" routerLink="/pets">
-    Entrar
-  </button>
 </main>
