@@ -2,43 +2,120 @@
   <p class="message__subtitle">
     Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:
   </p>
-  <form class="message-form">
+  <form
+    class="message-form"
+    #form="ngForm"
+    [formGroup]="messageForm"
+    (ngSubmit)="sendMessage()"
+  >
     <div>
       <label for="nome" class="message__label">Nome</label>
       <input
+        formControlName="name"
+        id="name"
         class="input message__input"
         type="text"
         placeholder="Insira seu nome completo"
         required
       />
+      <div
+        *ngIf="
+          (messageForm.get('name')?.invalid &&
+            messageForm.get('name')?.touched) ||
+          messageForm.get('name')?.dirty
+        "
+      >
+        <app-msg-warning
+          class="error_text"
+          *ngIf="messageForm.get('name')?.errors?.['required']"
+          message="O campo de nome deve ser preenchido"
+        ></app-msg-warning>
+        <app-msg-warning
+          *ngIf="messageForm.get('name')?.errors?.['minlength']"
+          message="O nome deve ter no mínimo 10 caracteres"
+        ></app-msg-warning>
+      </div>
     </div>
     <div>
       <label for="telefone" class="message__label">Telefone</label>
       <input
+        formControlName="phone"
+        id="phone"
         class="input message__input"
-        type="text"
+        type="tel"
         placeholder="Insira seu telefone e/ou Whatsapp"
         required
       />
+      <div
+        *ngIf="
+          (messageForm.get('phone')?.invalid &&
+            messageForm.get('phone')?.touched) ||
+          messageForm.get('phone')?.dirty
+        "
+      >
+        <app-msg-warning
+          class="error_text"
+          *ngIf="messageForm.get('phone')?.errors?.['required']"
+          message="O campo de telefone deve ser preenchido"
+        ></app-msg-warning>
+        <app-msg-warning
+          *ngIf="messageForm.get('phone')?.errors?.['pattern']"
+          message="O telefone deve ter um formato válido"
+        ></app-msg-warning>
+      </div>
     </div>
     <div>
       <label for="nome-animal" class="message__label">Nome do animal</label>
       <input
+        formControlName="petName"
+        id="petName"
         class="input message__input"
         type="text"
         placeholder="Por qual animal você se interessou?"
         required
       />
+      <div
+        *ngIf="
+          (messageForm.get('petName')?.invalid &&
+            messageForm.get('petName')?.touched) ||
+          messageForm.get('petName')?.dirty
+        "
+      >
+        <app-msg-warning
+          class="error_text"
+          *ngIf="messageForm.get('petName')?.errors?.['required']"
+          message="O campo Nome do Pet deve ser preenchido"
+        ></app-msg-warning>
+      </div>
     </div>
     <div>
       <label for="mensagem" class="message__label">Mensagem</label>
       <textarea
+        formControlName="msg"
+        id="msg"
         class="input message__textarea"
         cols="30"
         rows="10"
         placeholder="Escreva sua mensagem"
         required
       ></textarea>
+      <div
+        *ngIf="
+          (messageForm.get('msg')?.invalid &&
+            messageForm.get('msg')?.touched) ||
+          messageForm.get('msg')?.dirty
+        "
+      >
+        <app-msg-warning
+          class="error_text"
+          *ngIf="messageForm.get('msg')?.errors?.['required']"
+          message="O campo de mensagem deve ser preenchido"
+        ></app-msg-warning>
+        <app-msg-warning
+          *ngIf="messageForm.get('msg')?.errors?.['minlength']"
+          message="A mensagem deve ter no mínimo 30 caracteres"
+        ></app-msg-warning>
+      </div>
     </div>
     <button class="btn message__btn" type="submit">Enviar</button>
   </form>
