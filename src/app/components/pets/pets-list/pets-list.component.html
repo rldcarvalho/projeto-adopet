@@ -1,0 +1,11 @@
+<main class="pets-list">
+  <p class="pets-list__subtitle">
+    Olá! <span class="break"> <br /></span>Veja os amigos disponíveis para
+    adoção!
+  </p>
+  <div class="pets-list__list">
+    <div *ngFor="let pet of petsList">
+      <app-pet> [pet]="pet" [petsList]="petsList" </app-pet>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,17 @@
+<div class="card">
+  <img [src]="pet.img" [alt]="pet.alt" class="card__img" />
+  <div class="card__content">
+    <h4 class="card__content-name">{{ pet.name }}</h4>
+    <p class="card__content-age">{{ pet.age }}</p>
+    <p class="card__content-size">{{ pet.size }}</p>
+    <p class="card__content-feature">{{ pet.feature }}</p>
+    <address class="card__content-address">{{ pet.address }}</address>
+    <a routerLink="/message" class="card__content-link">
+      <img
+        src="../../../assets/img/ícone-contato.png"
+        alt="Ícone de balão de mensagem"
+      />
+      <span>Falar com o responsável</span>
+    </a>
+  </div>
+</div>
