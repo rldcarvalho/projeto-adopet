@@ -1,3 +1,5 @@
+import { PetMapper } from '../pet/petMapper';
+import { PetsService } from '../pets.service';
 import { Pet } from './../pet/pet';
 import { Component } from '@angular/core';
 
@@ -8,4 +10,15 @@ import { Component } from '@angular/core';
 })
 export class PetsListComponent {
   petsList: Pet[] = [];
+
+  constructor(private service: PetsService){}
+
+  ngOnInit(): void {
+    this.service.getPetList().subscribe((petsList) => {
+      this.petsList = petsList.map((json) => PetMapper.mapFromJson(json));
+      console.log(this.petsList)
+    })
+  }
 }
+
+

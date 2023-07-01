@@ -5,7 +5,7 @@
   </p>
   <div class="pets-list__list">
     <div *ngFor="let pet of petsList">
-      <app-pet> [pet]="pet" [petsList]="petsList" </app-pet>
+      <app-pet [pet]="pet"></app-pet>
     </div>
   </div>
 </main>

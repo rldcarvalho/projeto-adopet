@@ -1,4 +1,4 @@
-@import "../../../assets/abstract/variables";
+@import "../../../../assets/abstract/variables";
 
 .pets-list {
   &__subtitle {
@@ -42,7 +42,7 @@
 
 @media (min-width: 1440px) {
   .pets-list {
-    background: url(../../../assets/img/vetor2.svg) no-repeat right 0 top 0;
+    background: url(../../../../assets/img/vetor2.svg) no-repeat right 0 top 0;
     background-size: 134px;
     &__subtitle {
       margin-top: 40px;

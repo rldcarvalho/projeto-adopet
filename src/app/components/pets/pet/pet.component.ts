@@ -16,7 +16,5 @@ export class PetComponent {
       feature : '',
       address : ''
   }
-  
-  @Input() petsList: Pet[] = []; 
 
 }

@@ -8,7 +8,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { SigninComponent } from './components/home/signin/signin.component';
 import { SignupComponent } from './components/home/signup/signup.component';
-import { PetsComponent } from './components/pets/pets.component';
 import { MessageComponent } from './components/pets/message/message.component';
 import { ProfileComponent } from './components/pets/profile/profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,6 +15,7 @@ import { MsgWarningComponent } from './components/msg-warning/msg-warning.compon
 import { PasswordMatchDirective } from './directives/password-match.directive';
 import { PetComponent } from './components/pets/pet/pet.component';
 import { PetsListComponent } from './components/pets/pets-list/pets-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { PetsListComponent } from './components/pets/pets-list/pets-list.compone
     HomeComponent,
     SigninComponent,
     SignupComponent,
-    PetsComponent,
     MessageComponent,
     ProfileComponent,
     MsgWarningComponent,
@@ -37,7 +36,8 @@ import { PetsListComponent } from './components/pets/pets-list/pets-list.compone
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

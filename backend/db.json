@@ -1,5 +1,5 @@
 {
-    "cardPets": [
+    "pets": [
         {
           "img": "./assets/img/Dunga.png",
           "alt": "Imagem de um cachorrinho",
