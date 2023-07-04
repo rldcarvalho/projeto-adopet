@@ -16,6 +16,7 @@ import { PasswordMatchDirective } from './directives/password-match.directive';
 import { PetComponent } from './components/pets/pet/pet.component';
 import { PetsListComponent } from './components/pets/pets-list/pets-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './shared/user/userService';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
