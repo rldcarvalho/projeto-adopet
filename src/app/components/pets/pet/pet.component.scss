@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 360px;
   height: 196px;
   gap: 16px;
 
@@ -41,17 +41,5 @@
       color: $cinza-escuro;
       margin-top: 8px;
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .card {
-    width: calc(50% - 8px);
-  }
-}
-
-@media (min-width: 1440px) {
-  .card {
-    width: calc(33% - 16px);
   }
 }
