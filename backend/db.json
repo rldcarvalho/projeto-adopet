@@ -1,106 +1,116 @@
 {
   "users": [
     {
-      "id":1,
+      "id": 1,
       "email": "admin@admin",
-        "password": "admin",
-        "name": "",
-        "phone": "",
-        "city": "",
-        "about": "",
-        "image": ""
+      "password": "admin",
+      "name": "",
+      "phone": "",
+      "city": "",
+      "about": "",
+      "image": ""
+    },
+    {
+      "email": "user@user",
+      "password": "user",
+      "name": "user",
+      "phone": "",
+      "city": "",
+      "about": "",
+      "image": "",
+      "id": 2
     }
   ],
   "pets": [
-      {
-        "img": "./assets/img/Dunga.png",
-        "alt": "Imagem de um cachorrinho",
-        "petNome": "Dunga",
-        "petIdade": "2 anos",
-        "petPorte": "Porte pequeno",
-        "petCaracteristica": "Calmo e educado",
-        "petEndereco": "Rio de Janeiro (RJ)",
-        "id": 1
-      },
-      {
-        "img": "./assets/img/Felícia.png",
-        "alt": "Imagem de gatinha",
-        "petNome": "Felícia",
-        "petIdade": "3 meses",
-        "petPorte": "Porte pequeno",
-        "petCaracteristica": "Ativa e carinhosa",
-        "petEndereco": "Nova Iguaçú (RJ)",
-        "id": 2
-      },
-      {
-        "img": "./assets/img/sirius.png",
-        "alt": "Imagem de um cachorrinho",
-        "petNome": "Sírius",
-        "petIdade": "6 meses",
-        "petPorte": "Porte grande",
-        "petCaracteristica": "Ativo e educado",
-        "petEndereco": "Duque de Caxias (RJ)",
-        "id": 3
-      },
-      {
-        "img": "./assets/img/Fiona.png",
-        "alt": "Imagem de uma cachorrinha",
-        "petNome": "Fiona",
-        "petIdade": "3 anos",
-        "petPorte": "Porte pequeno",
-        "petCaracteristica": "Calma e carinhosa",
-        "petEndereco": "São Gonçalo (RJ)",
-        "id": 4
-      },
-      {
-        "img": "./assets/img/Sid.png",
-        "alt": "Imagem de um cachorrinho",
-        "petNome": "Sid",
-        "petIdade": "8 meses",
-        "petPorte": "Porte médio/grande",
-        "petCaracteristica": "Brincalhão e amável",
-        "petEndereco": "Rio de Janeiro (RJ)",
-        "id": 5
-      },
-      {
-        "img": "./assets/img/Yoda.png",
-        "alt": "Imagem de um gatinho",
-        "petNome": "Yoda",
-        "petIdade": "1 ano",
-        "petPorte": "Porte médio",
-        "petCaracteristica": "Ativo e carinhoso",
-        "petEndereco": "Nova Iguaçú (RJ)",
-        "id": 6
-      },
-      {
-        "img": "./assets/img/Lua.png",
-        "alt": "Imagem de uma gatinha",
-        "petNome": "Lua",
-        "petIdade": "6 meses",
-        "petPorte": "Porte médio",
-        "petCaracteristica": "Ativa e carinhosa",
-        "petEndereco": "Duque de Caxias (RJ)",
-        "id": 7
-      },
-      {
-        "img": "./assets/img/Amora.png",
-        "alt": "Imagem de uma cachorrinha",
-        "petNome": "Amora",
-        "petIdade": "45 dias",
-        "petPorte": "Porte grande",
-        "petCaracteristica": "Calma e carinhosa",
-        "petEndereco": "São Gonçalo (RJ)",
-        "id": 8
-      },
-      {
-        "img": "./assets/img/zelda.png",
-        "alt": "Imagem de gatinha",
-        "petNome": "Zelda",
-        "petIdade": "5 meses",
-        "petPorte": "Porte médio",
-        "petCaracteristica": "Ativa e amável",
-        "petEndereco": "Rio de Janeiro (RJ)",
-        "id": 9
-      }
-    ]
+    {
+      "img": "./assets/img/Dunga.png",
+      "alt": "Imagem de um cachorrinho",
+      "petNome": "Dunga",
+      "petIdade": "2 anos",
+      "petPorte": "Porte pequeno",
+      "petCaracteristica": "Calmo e educado",
+      "petEndereco": "Rio de Janeiro (RJ)",
+      "id": 1
+    },
+    {
+      "img": "./assets/img/Felícia.png",
+      "alt": "Imagem de gatinha",
+      "petNome": "Felícia",
+      "petIdade": "3 meses",
+      "petPorte": "Porte pequeno",
+      "petCaracteristica": "Ativa e carinhosa",
+      "petEndereco": "Nova Iguaçú (RJ)",
+      "id": 2
+    },
+    {
+      "img": "./assets/img/sirius.png",
+      "alt": "Imagem de um cachorrinho",
+      "petNome": "Sírius",
+      "petIdade": "6 meses",
+      "petPorte": "Porte grande",
+      "petCaracteristica": "Ativo e educado",
+      "petEndereco": "Duque de Caxias (RJ)",
+      "id": 3
+    },
+    {
+      "img": "./assets/img/Fiona.png",
+      "alt": "Imagem de uma cachorrinha",
+      "petNome": "Fiona",
+      "petIdade": "3 anos",
+      "petPorte": "Porte pequeno",
+      "petCaracteristica": "Calma e carinhosa",
+      "petEndereco": "São Gonçalo (RJ)",
+      "id": 4
+    },
+    {
+      "img": "./assets/img/Sid.png",
+      "alt": "Imagem de um cachorrinho",
+      "petNome": "Sid",
+      "petIdade": "8 meses",
+      "petPorte": "Porte médio/grande",
+      "petCaracteristica": "Brincalhão e amável",
+      "petEndereco": "Rio de Janeiro (RJ)",
+      "id": 5
+    },
+    {
+      "img": "./assets/img/Yoda.png",
+      "alt": "Imagem de um gatinho",
+      "petNome": "Yoda",
+      "petIdade": "1 ano",
+      "petPorte": "Porte médio",
+      "petCaracteristica": "Ativo e carinhoso",
+      "petEndereco": "Nova Iguaçú (RJ)",
+      "id": 6
+    },
+    {
+      "img": "./assets/img/Lua.png",
+      "alt": "Imagem de uma gatinha",
+      "petNome": "Lua",
+      "petIdade": "6 meses",
+      "petPorte": "Porte médio",
+      "petCaracteristica": "Ativa e carinhosa",
+      "petEndereco": "Duque de Caxias (RJ)",
+      "id": 7
+    },
+    {
+      "img": "./assets/img/Amora.png",
+      "alt": "Imagem de uma cachorrinha",
+      "petNome": "Amora",
+      "petIdade": "45 dias",
+      "petPorte": "Porte grande",
+      "petCaracteristica": "Calma e carinhosa",
+      "petEndereco": "São Gonçalo (RJ)",
+      "id": 8
+    },
+    {
+      "img": "./assets/img/zelda.png",
+      "alt": "Imagem de gatinha",
+      "petNome": "Zelda",
+      "petIdade": "5 meses",
+      "petPorte": "Porte médio",
+      "petCaracteristica": "Ativa e amável",
+      "petEndereco": "Rio de Janeiro (RJ)",
+      "id": 9
+    }
+  ]
 }

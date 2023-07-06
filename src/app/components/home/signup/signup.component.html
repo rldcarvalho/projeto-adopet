@@ -9,13 +9,7 @@
     Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
   </p>
 
-  <form
-    class="signup-form"
-    id="form"
-    #form="ngForm"
-    [formGroup]="signupForm"
-    (ngSubmit)="register()"
-  >
+  <form class="signup-form" id="form" #form="ngForm" [formGroup]="signupForm">
     <div>
       <label for="name" class="signup__label">Nome</label>
       <input
@@ -137,5 +131,7 @@
       </div>
     </div>
   </form>
-  <button class="btn signup__btn" type="submit">Cadastrar</button>
+  <button class="btn signup__btn" type="submit" (click)="register()">
+    Cadastrar
+  </button>
 </main>
