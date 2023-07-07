@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { User } from 'src/app/shared/user/user';
 import { UserService } from 'src/app/shared/user/userService';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/shared/auth/auth.service';
 
 @Component({
   selector: 'app-signin',
@@ -17,7 +18,7 @@ export class SigninComponent {
   eyeIcon: string = "../../../assets/img/eye.svg";
   eyeClosedIcon: string = '../../../assets/img/eye-closed.svg';
 
-  constructor(private fb: FormBuilder, private userService: UserService, private router: Router) {
+  constructor(private fb: FormBuilder, private userService: UserService, private router: Router, private authService: AuthService) {
     this.signinForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]]
@@ -33,15 +34,13 @@ export class SigninComponent {
       const email = this.signinForm.get('email')?.value;
       const password = this.signinForm.get('password')?.value;
 
-      // Fazer a chamada para obter o usuário com base no email
       this.userService.getUserByEmail(email).subscribe(
         (user: User | null) => {
           if (user && user.password === password) {
-            // Autenticação bem-sucedida
             console.log('Usuário autenticado:', user);
+            this.authService.currentUser = user;
             this.router.navigateByUrl('/pets');
           } else {
-            // Credenciais inválidas
             console.error('Credenciais inválidas');
           }
         },
