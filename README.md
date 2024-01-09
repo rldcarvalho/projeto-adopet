@@ -1,27 +1,47 @@
-# ProjetoAdopet
+# Adopet Página Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=angular&message=16.0.0&color=blue&style=for-the-badge&logo=angular"/>
+  <img src="http://img.shields.io/static/v1?label=typescript&message=4.9.3&color=blue&style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/static/v1?label=HTML&message=5&color=blue&style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="http://img.shields.io/static/v1?label=scss&message=1.69.7&color=blue&style=for-the-badge&logo=sass"/>
+</p>
 
-## Development server
+## Descrição do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Essa é uma página Web de adoção de pets, desenvolvida com Angular e Typescript, contendo: página principal, login e cadastro de usuário, envio de mensagens e edição de perfil de usuário. Todas as páginas são responsivas para exibição em Celulares, Tablets e Desktops.
 
-## Code scaffolding
+## Executando o projeto localmente
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para executar a aplicação localmente deve-se fazer inicialmente o clone desse repositório:
 
-## Build
+```bash
+# Clone o repositório
+git clone https://github.com/rldcarvalho/projeto-adopet.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Executando o server localmente:
+```bash
+# Navegue até o repositório clonado
+cd projeto-adopet
 
-## Running unit tests
+# Execute
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Simulando o Back-end:
+```bash
+# Navegue até o mock do backend
+cd backend
 
-## Running end-to-end tests
+# Execute
+npm start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A página será carregada no endereço: `http://localhost:4200/`
 
-## Further help
+## Licença
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The [MIT License](https://github.com/rldcarvalho/projeto-jornada-milhas/blob/main/LICENSE) (MIT)
+
+Copyright :copyright: 2023 - Api Jornada Milhas
