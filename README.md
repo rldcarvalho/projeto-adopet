@@ -11,6 +11,16 @@
 
 Essa é uma página Web de adoção de pets, desenvolvida com Angular e Typescript, contendo: página principal, login e cadastro de usuário, envio de mensagens e edição de perfil de usuário. Todas as páginas são responsivas para exibição em Celulares, Tablets e Desktops.
 
+<p align="center">
+
+  <img src="https://github.com/rldcarvalho/projeto-adopet/assets/28987245/8143c90b-4ba6-4f57-a35c-ca67004c5e14">
+
+  <img src="https://github.com/rldcarvalho/projeto-adopet/assets/28987245/beee63c2-3904-4e4b-aa26-407fbc9a0477">
+
+  <img src="https://github.com/rldcarvalho/projeto-adopet/assets/28987245/debae1a8-ccb6-45fc-93a1-8360843b98e3">
+  
+</p>
+
 ## Executando o projeto localmente
 
 Para executar a aplicação localmente deve-se fazer inicialmente o clone desse repositório:
